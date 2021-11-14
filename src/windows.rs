@@ -163,7 +163,7 @@ pub fn back_crates(rep_path: &str) {
         }
         fs::write(&config_full_path, file).unwrap();
         println!("{:?} 写入成功", config_full_path);
-        println!("\ncargo CN镜像设置完成");
+        println!("\ncrates CN镜像设置完成");
     } else {
         println!("没有{:?}目录，您好像没有安装Rust，请到 https://www.rust-lang.org/learn/get-started 下载。", full_path);
     }
@@ -173,6 +173,6 @@ pub fn windows(cn_server: &str, cn_server_root: &str, rep_path: &str) {
     backup_rustup();
     set_env(cn_server, cn_server_root);
     println!("\n");
-    println!("开始设置cargo CN镜像\n");
+    println!("开始设置crates CN镜像\n");
     back_crates(rep_path);
 }

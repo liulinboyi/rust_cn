@@ -2,7 +2,7 @@
 
 > **为Rust设置国内镜像**
 
-- 设置`rustup`和`cargo`镜像
+- 设置`rustup`和`crates`镜像
 
 
 - 镜像地址用的是[RsProxy.cn](https://rsproxy.cn/)
