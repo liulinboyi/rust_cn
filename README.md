@@ -15,6 +15,7 @@
 ```
 .\rust_cn.exe
 ```
+##### [下载](https://github.com/liulinboyi/rust_cn/releases/latest)解压后双击执行也可以，当然最好是在命令行执行，可以捕获错误
 
 ![结果](https://github.com/liulinboyi/rust_cn/raw/main/image/result.png)
 

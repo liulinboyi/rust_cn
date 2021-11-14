@@ -28,6 +28,12 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         // println!("Hello Windows");
         let _args: Vec<String> = env::args().collect();
         windows::windows(cn_server, cn_server_root, rep_path);
+        println!("按任意键退出！");
+        let mut line = String::new();
+        std::io::stdin().read_line(&mut line).unwrap();
+        if line.len() > 0 {
+            std::process::exit(0);
+        }
     } else if cfg!(target_os = "linux") {
         println!("Hello Linux");
     } else {
