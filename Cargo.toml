@@ -2,7 +2,7 @@
 name = "rust_cn"
 license = "MIT"
 authors = ["liulinboyi <xiaoliumail@foxmail.com>"]
-version = "0.1.3"
+version = "0.1.5"
 edition = "2021"
 description = "为Rust设置国内镜像 自动设置rustup和crates国内镜像"
 

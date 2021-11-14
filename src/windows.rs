@@ -141,12 +141,12 @@ pub fn back_crates(rep_path: &str) {
     full_path.push_str("\\.cargo");
     // println!("full_path:{:?}", full_path);
     let p = Path::new(&full_path);
-    if p.exists() {
+    if p.is_dir() {
         // println!("{:?} 路径存在", p);
         let mut config_full_path = full_path.clone();
         config_full_path.push_str("\\config");
         let config_path = Path::new(&config_full_path);
-        if config_path.exists() {
+        if config_path.is_file() {
             // user/config
             // println!("{:?} 路径存在", config_path);
             let mut config_full_path_bak = config_full_path.clone();
@@ -159,10 +159,10 @@ pub fn back_crates(rep_path: &str) {
             // let mut cur = rsproxy.clone();
             // cur.append(&mut before);
             // println!("向前追加后: {:?}",str::from_utf8(&cur).unwrap());
+            fs::write(&config_full_path, file).unwrap(); // 创建文件
         } else {
-            fs::create_dir(&config_full_path).unwrap(); // 创建文件
+            fs::write(&config_full_path, file).unwrap(); // 创建文件
         }
-        fs::write(&config_full_path, file).unwrap();
         println!("{:?} 写入成功", config_full_path);
         println!("\ncrates CN镜像设置完成");
     } else {
