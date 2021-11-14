@@ -16,4 +16,4 @@
 .\rust_cn.exe
 ```
 
-![结果](./image/result.png)
+![结果](https://github.com/liulinboyi/rust_cn/raw/main/image/result.png)
