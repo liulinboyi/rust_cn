@@ -17,3 +17,6 @@
 ```
 
 ![结果](https://github.com/liulinboyi/rust_cn/raw/main/image/result.png)
+
+## [crates.io](https://crates.io/crates/rust_cn)
+## [docs.rs](https://docs.rs/crate/rust_cn)
