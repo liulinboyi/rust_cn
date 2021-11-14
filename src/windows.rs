@@ -1,3 +1,4 @@
+//! 执行windows平台命令 Execute windows platform commands
 use std::time::SystemTime;
 use std::{collections::HashMap, env, ffi::OsString};
 
